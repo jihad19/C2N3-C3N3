@@ -1,0 +1,14 @@
+{
+  "name": "starter-file",
+  "version": "1.0.0",
+  "description": "C2N3-C3N3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "covid-19"
+  ],
+  "author": "",
+  "license": "ISC"
+}
