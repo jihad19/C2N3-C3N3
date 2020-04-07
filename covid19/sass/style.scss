@@ -2,6 +2,46 @@
 body {
 	margin: 0;
 	padding: 0;
-	min-width: 400px;
+	min-width: 470px;
 }
 @import "header";
+.Symptômes {
+	&__symp {
+		display: flex;
+		text-align: center;
+		justify-content: space-around;
+
+		&__img {
+			width: 50%;
+			padding-top: 30px;
+		}
+
+		&__content1 {
+			max-width: 50%;
+			margin: 0;
+			padding: 25px 0;
+			&__p1 {
+				color: $basic-color1;
+				font-weight: bold;
+				line-height: 30px;
+			}
+			&__img {
+			}
+			&__p2 {
+				line-height: 30px;
+			}
+			&__a {
+				display: block;
+				&__button {
+					padding: 10px 90px;
+					border: none;
+					border-radius: 5px;
+					background-color: $basic-color1;
+					color: #fff;
+					font: bolder;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

@@ -37,18 +37,18 @@
 				}
 			}
 			&__button {
-				margin: 0 0 0 3em;
+				margin: 0 0 0 15px;
 				text-align: center;
 				border: 1px solid $basic-color1;
 				border-radius: 10px;
 
 				&__a {
 					color: $basic-color1;
-					font-size: 2em;
+					font-size: 25px;
 					text-decoration: none;
 					&__img {
 						padding: 6px 0 0 5px;
-						width: 1rem;
+						width: 25px;
 					}
 				}
 			}
