@@ -1,8 +1,56 @@
-h1 {
-	background-color: #000;
-	color: aqua;
-}
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 400px; }
 
-nav {
-	color: #000;
-}
+.HeroHeader__header {
+  background-color: #d0e5f0;
+  background-image: url(../images/Mergedbar-1.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "headimg ulBtt"; }
+  .HeroHeader__header__img {
+    grid-area: headimg;
+    width: 4em;
+    padding: 0 0 0 15px; }
+  .HeroHeader__header__ulBtt {
+    display: flex;
+    padding: 0 20px 0 0;
+    grid-area: ulBtt;
+    justify-self: end;
+    align-items: center; }
+    .HeroHeader__header__ulBtt__ul__li {
+      display: inline-flex;
+      list-style: none; }
+      .HeroHeader__header__ulBtt__ul__li__a {
+        font-size: 1.5em;
+        padding: 0 10px;
+        text-decoration: none;
+        color: #1078ad; }
+    .HeroHeader__header__ulBtt__button {
+      margin: 0 0 0 3em;
+      text-align: center;
+      border: 1px solid #1078ad;
+      border-radius: 10px; }
+      .HeroHeader__header__ulBtt__button__a {
+        color: #1078ad;
+        font-size: 2em;
+        text-decoration: none; }
+        .HeroHeader__header__ulBtt__button__a__img {
+          padding: 6px 0 0 5px;
+          width: 1rem; }
+
+.HeroHeader__InfoMedical {
+  padding: 10px 30px;
+  margin: 0;
+  text-align: center;
+  background-color: #f4cf1b; }
+  .HeroHeader__InfoMedical__h1 {
+    font-size: 2em; }
+  .HeroHeader__InfoMedical__p {
+    color: #1078ad;
+    line-height: 2em; }

@@ -1,14 +1,17 @@
 {
-  "name": "starter-file",
-  "version": "1.0.0",
-  "description": "C2N3-C3N3",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "covid-19"
-  ],
-  "author": "",
-  "license": "ISC"
+	"name": "starter-file",
+	"version": "1.0.0",
+	"description": "C2N3-C3N3",
+	"main": "index.js",
+	"scripts": {
+		"compile": "node-sass sass/style.scss css/style.comp.css -w",
+		"watch": "node-sass sass/style.scss css/style.css -w",
+		"concat": "concat -o css/style.concat.css css/additional.css css/style.comp.css",
+		"prefix": "postcss --use autoprefix -b 'last 3 versions' css/style.concat.css -o css/style.prefix.css",
+		"compress": "node-sass css/style.concat.css css/style.css --output-style compressed",
+		"build": "npm-run-all compile concat prefix compress"
+	},
+	"keywords": [ "covid-19" ],
+	"author": "",
+	"license": "ISC"
 }

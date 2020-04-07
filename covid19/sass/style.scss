@@ -1,9 +1,7 @@
-$clorer: #000;
-h1 {
-	background-color: $clorer;
-    color: aqua;
-    
+@import "variables";
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 400px;
 }
-nav{
-    color: #;
-}
+@import "header";

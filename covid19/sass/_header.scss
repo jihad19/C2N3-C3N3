@@ -1,0 +1,70 @@
+@import "variables";
+
+.HeroHeader {
+	&__header {
+		background-color: $basic-color3;
+		background-image: url(../images/Mergedbar-1.svg);
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: center;
+		background-size: cover;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "headimg ulBtt";
+		&__img {
+			grid-area: headimg;
+			width: 4em;
+			padding: 0 0 0 15px;
+		}
+		&__ulBtt {
+			display: flex;
+			padding: 0 20px 0 0;
+			grid-area: ulBtt;
+			justify-self: end;
+			align-items: center;
+
+			&__ul {
+				&__li {
+					display: inline-flex;
+					list-style: none;
+
+					&__a {
+						font-size: 1.5em;
+						padding: 0 10px;
+						text-decoration: none;
+						color: $basic-color1;
+					}
+				}
+			}
+			&__button {
+				margin: 0 0 0 3em;
+				text-align: center;
+				border: 1px solid $basic-color1;
+				border-radius: 10px;
+
+				&__a {
+					color: $basic-color1;
+					font-size: 2em;
+					text-decoration: none;
+					&__img {
+						padding: 6px 0 0 5px;
+						width: 1rem;
+					}
+				}
+			}
+		}
+	}
+	&__InfoMedical {
+		padding: 10px 30px;
+		margin: 0;
+		text-align: center;
+		background-color: $basic-color2;
+		&__h1 {
+			font-size: 2em;
+		}
+		&__p {
+			color: $basic-color1;
+			line-height: 2em;
+		}
+	}
+}
