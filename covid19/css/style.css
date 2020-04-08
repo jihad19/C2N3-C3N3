@@ -113,3 +113,33 @@ body {
     grid-area: Gêne; }
     .Symptômes__srv__Gêne__img {
       width: 9em; }
+
+.Recommandations {
+  background-color: #1078ad;
+  padding: 10px; }
+  .Recommandations__h1 {
+    margin: 0;
+    color: #d0e5f0;
+    text-align: center; }
+  .Recommandations__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr)); }
+    .Recommandations__content__cont1 {
+      justify-self: center; }
+      .Recommandations__content__cont1__h2 {
+        color: #d0e5f0; }
+      .Recommandations__content__cont1__p {
+        color: #d0e5f0; }
+    .Recommandations__content__cont2 {
+      text-align: center;
+      padding: 0 0 5px 0; }
+      .Recommandations__content__cont2__h4 {
+        color: #f4cf1b; }
+      .Recommandations__content__cont2__button {
+        background-color: #f4cf1b;
+        color: #1078ad;
+        border: none;
+        padding: 10px; }
+      .Recommandations__content__cont2__a {
+        color: #d0e5f0;
+        text-decoration-color: #f4cf1b; }

@@ -1,0 +1,41 @@
+@import "variables";
+
+.Recommandations {
+	background-color: $basic-color1;
+	padding: 10px;
+	&__h1 {
+		margin: 0;
+		color: $basic-color3;
+		text-align: center;
+	}
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		&__cont1 {
+			justify-self: center;
+			&__h2 {
+				color: $basic-color3;
+			}
+			&__p {
+				color: $basic-color3;
+			}
+		}
+		&__cont2 {
+			text-align: center;
+			padding: 0 0 5px 0;
+			&__h4 {
+				color: $basic-color2;
+			}
+			&__button {
+				background-color: $basic-color2;
+				color: $basic-color1;
+				border: none;
+				padding: 10px;
+			}
+			&__a {
+				color: $basic-color3;
+				text-decoration-color: $basic-color2;
+			}
+		}
+	}
+}
