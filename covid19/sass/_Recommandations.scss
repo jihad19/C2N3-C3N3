@@ -13,6 +13,7 @@
 		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 		&__cont1 {
 			justify-self: center;
+			text-align: center;
 			&__h2 {
 				color: $basic-color3;
 			}
@@ -21,6 +22,7 @@
 			}
 		}
 		&__cont2 {
+			align-self: center;
 			text-align: center;
 			padding: 0 0 5px 0;
 			&__h4 {

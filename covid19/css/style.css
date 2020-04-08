@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 470px; }
+  min-width: 470px;
+  font-family: 'Cairo', sans-serif; }
 
 .HeroHeader__header {
   background-color: #d0e5f0;
@@ -13,37 +14,40 @@ body {
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "headimg ulBtt"; }
+  grid-template-areas: " ulBtt headimg"; }
   .HeroHeader__header__img {
     grid-area: headimg;
     width: 4em;
-    padding: 0 0 0 15px; }
+    padding: 0 15px 0 0;
+    justify-self: end; }
   .HeroHeader__header__ulBtt {
     display: flex;
     padding: 0 20px 0 0;
     grid-area: ulBtt;
-    justify-self: end;
+    justify-self: start;
     align-items: center; }
     .HeroHeader__header__ulBtt__ul__li {
       display: inline-flex;
       list-style: none; }
       .HeroHeader__header__ulBtt__ul__li__a {
         font-size: 1.5em;
-        padding: 0 10px;
+        padding: 0 20px;
         text-decoration: none;
         color: #1078ad; }
     .HeroHeader__header__ulBtt__button {
       margin: 0 0 0 15px;
+      padding: 8px 6px;
       text-align: center;
       border: 1px solid #1078ad;
       border-radius: 10px;
       background-color: initial; }
       .HeroHeader__header__ulBtt__button__a {
+        display: flex;
         color: #1078ad;
         font-size: 25px;
         text-decoration: none; }
         .HeroHeader__header__ulBtt__button__a__img {
-          padding: 6px 0 0 5px;
+          padding: 0 0 0 5px;
           width: 25px; }
 
 .HeroHeader__InfoMedical {
@@ -54,6 +58,9 @@ body {
   .HeroHeader__InfoMedical__h1 {
     font-size: 2em; }
   .HeroHeader__InfoMedical__p {
+    max-width: 950px;
+    margin: auto;
+    padding: 0 0 20px 0;
     color: #1078ad;
     line-height: 2em; }
 
@@ -78,12 +85,12 @@ body {
       line-height: 30px; }
     .Symptômes__symp__content1__a__button {
       padding: 10px 90px;
+      color: #d0e5f0;
+      background-color: #1078ad;
       border: none;
       border-radius: 5px;
-      background-color: #1078ad;
-      color: #fff;
-      font: bolder;
-      font-size: 20px; }
+      font-weight: bolder;
+      font-size: 15px; }
 
 .Symptômes__srv {
   text-align: center;
@@ -125,12 +132,14 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr)); }
     .Recommandations__content__cont1 {
-      justify-self: center; }
+      justify-self: center;
+      text-align: center; }
       .Recommandations__content__cont1__h2 {
         color: #d0e5f0; }
       .Recommandations__content__cont1__p {
         color: #d0e5f0; }
     .Recommandations__content__cont2 {
+      align-self: center;
       text-align: center;
       padding: 0 0 5px 0; }
       .Recommandations__content__cont2__h4 {
@@ -143,3 +152,79 @@ body {
       .Recommandations__content__cont2__a {
         color: #d0e5f0;
         text-decoration-color: #f4cf1b; }
+
+.HeroFooter__test {
+  background-color: #d0e5f0;
+  text-align: center;
+  padding: 20px 0; }
+  .HeroFooter__test__h1 {
+    color: #1078ad; }
+  .HeroFooter__test__img {
+    width: auto; }
+  .HeroFooter__test__a {
+    text-decoration: none; }
+    .HeroFooter__test__a__button {
+      padding: 10px 90px;
+      color: #d0e5f0;
+      background-color: #1078ad;
+      border: none;
+      border-radius: 5px;
+      font-weight: bolder;
+      font-size: 15px; }
+
+.HeroFooter__footer {
+  text-align: center; }
+  .HeroFooter__footer__img {
+    width: auto;
+    padding: 10px 0 0 0; }
+  .HeroFooter__footer__grid {
+    padding: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr)); }
+    .HeroFooter__footer__grid__grid2 {
+      display: flex;
+      justify-content: space-around; }
+      .HeroFooter__footer__grid__grid2__lang {
+        align-self: center; }
+        .HeroFooter__footer__grid__grid2__lang__button {
+          background-color: initial;
+          border-color: #1078ad;
+          border-radius: 5px;
+          padding: 5px; }
+          .HeroFooter__footer__grid__grid2__lang__button__a {
+            display: flex;
+            color: #1078ad;
+            text-decoration: none; }
+            .HeroFooter__footer__grid__grid2__lang__button__a__img {
+              width: 1em;
+              padding: 0 0 0 4px; }
+        .HeroFooter__footer__grid__grid2__lang__ul {
+          padding: 0; }
+          .HeroFooter__footer__grid__grid2__lang__ul__li {
+            list-style: none; }
+            .HeroFooter__footer__grid__grid2__lang__ul__li__a {
+              padding: 0 0 8px 0;
+              text-decoration: none;
+              color: black;
+              display: block; }
+      .HeroFooter__footer__grid__grid2__contacts__h3 {
+        color: #1078ad; }
+      .HeroFooter__footer__grid__grid2__contacts__h4--chiffre {
+        color: black; }
+      .HeroFooter__footer__grid__grid2__contacts__h4--num {
+        color: #369d53; }
+      .HeroFooter__footer__grid__grid2__contacts__h4--aide {
+        color: black; }
+      .HeroFooter__footer__grid__grid2__contacts__h4--114 {
+        color: #369d53; }
+    .HeroFooter__footer__grid__algorithme {
+      align-self: center;
+      justify-self: center; }
+      .HeroFooter__footer__grid__algorithme__p {
+        max-width: 600px;
+        padding: 5px;
+        color: black;
+        opacity: 0.6; }
+  .HeroFooter__footer__color {
+    background-color: #1078ad;
+    height: 20px; }

@@ -1,0 +1,83 @@
+@import "variables";
+.HeroFooter__footer {
+	text-align: center;
+	&__img {
+		width: auto;
+		padding: 10px 0 0 0;
+	}
+	&__grid {
+		padding: 30px 0 0 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+		&__grid2 {
+			display: flex;
+			justify-content: space-around;
+
+			&__lang {
+				align-self: center;
+				&__button {
+					background-color: initial;
+					border-color: $basic-color1;
+					border-radius: 5px;
+					padding: 5px;
+
+					&__a {
+						display: flex;
+						color: $basic-color1;
+						text-decoration: none;
+						&__img {
+							width: 1em;
+							padding: 0 0 0 4px;
+						}
+					}
+				}
+				&__ul {
+					padding: 0;
+
+					&__li {
+						list-style: none;
+						&__a {
+							padding: 0 0 8px 0;
+							text-decoration: none;
+							color: black;
+							display: block;
+						}
+					}
+				}
+			}
+
+			&__contacts {
+				&__h3 {
+					color: $basic-color1;
+				}
+				&__h4--chiffre {
+					color: black;
+				}
+				&__h4--num {
+					color: #369d53;
+				}
+				&__h4--aide {
+					color: black;
+				}
+				&__h4--114 {
+					color: #369d53;
+				}
+			}
+		}
+
+		&__algorithme {
+			align-self: center;
+			justify-self: center;
+			&__p {
+				max-width: 600px;
+				padding: 5px;
+				color: black;
+				opacity: 0.6;
+			}
+		}
+	}
+	&__color {
+		background-color: $basic-color1;
+		height: 20px;
+	}
+}

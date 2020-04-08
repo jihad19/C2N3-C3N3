@@ -4,9 +4,27 @@ body {
 	margin: 0;
 	padding: 0;
 	min-width: 470px;
+	font-family: 'Cairo', sans-serif;
 }
 
 @import "header";
+
+.HeroHeader__InfoMedical {
+	padding: 10px 30px;
+	margin: 0;
+	text-align: center;
+	background-color: $basic-color2;
+	&__h1 {
+		font-size: 2em;
+	}
+	&__p {
+		max-width: 950px;
+		margin: auto;
+		padding: 0 0 20px 0;
+		color: $basic-color1;
+		line-height: 2em;
+	}
+}
 
 .Symptômes {
 	&__symp {
@@ -38,12 +56,12 @@ body {
 			&__a {
 				&__button {
 					padding: 10px 90px;
+					color: $basic-color3;
+					background-color: $basic-color1;
 					border: none;
 					border-radius: 5px;
-					background-color: $basic-color1;
-					color: #fff;
-					font: bolder;
-					font-size: 20px;
+					font-weight: bolder;
+					font-size: 15px;
 				}
 			}
 		}
@@ -89,3 +107,32 @@ body {
 }
 
 @import "Recommandations";
+
+.HeroFooter {
+	&__test {
+		background-color: $basic-color3;
+		text-align: center;
+		padding: 20px 0;
+		&__h1 {
+			color: $basic-color1;
+		}
+		&__img {
+			width: auto;
+		}
+		&__a {
+			text-decoration: none;
+
+			&__button {
+				padding: 10px 90px;
+				color: $basic-color3;
+				background-color: $basic-color1;
+				border: none;
+				border-radius: 5px;
+				font-weight: bolder;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+@import "Footer";
