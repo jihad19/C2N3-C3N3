@@ -1,4 +1,12 @@
 @import "variables";
+.Informations__covidmaroc__a__button {
+	max-width: 13rem;
+	padding: 15px 20px;
+	border: none;
+	border-radius: 3px;
+	color: $basic-color3;
+	background-color: $basic-color1;
+}
 
 .protéger {
 	text-align: center;
@@ -134,12 +142,7 @@
 		&__a {
 			padding: 0 0 20px 0;
 			&__button {
-				max-width: 13rem;
-				padding: 15px 20px;
-				border: none;
-				border-radius: 3px;
-				color: $basic-color3;
-				background-color: $basic-color1;
+				@extend.Informations__covidmaroc__a__button;
 			}
 		}
 	}
