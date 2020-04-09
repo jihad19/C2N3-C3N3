@@ -1,10 +1,4 @@
 @charset "UTF-8";
-body {
-  margin: 0;
-  padding: 0;
-  min-width: 470px;
-  font-family: 'Cairo', sans-serif; }
-
 .HeroHeader__header {
   background-color: #d0e5f0;
   background-image: url(../../images/Mergedbar-1.svg);
@@ -50,77 +44,6 @@ body {
           padding: 0 0 0 5px;
           width: 25px; }
 
-.HeroHeader__InfoMedical {
-  padding: 10px 30px;
-  margin: 0;
-  text-align: center;
-  background-color: #f4cf1b; }
-  .HeroHeader__InfoMedical__h1 {
-    font-size: 2em; }
-  .HeroHeader__InfoMedical__p {
-    max-width: 950px;
-    margin: auto;
-    padding: 0 0 20px 0;
-    color: #1078ad;
-    line-height: 2em; }
-
-.Symptômes__symp {
-  text-align: center;
-  padding: 30px 0 0 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr)); }
-  .Symptômes__symp__Dimg__img {
-    width: 24rem;
-    justify-self: center;
-    padding: 30px 0 0 0; }
-  .Symptômes__symp__content1 {
-    padding: 0 0 20px 0; }
-    .Symptômes__symp__content1__p1 {
-      color: #1078ad;
-      font-weight: bold;
-      line-height: 30px; }
-    .Symptômes__symp__content1__img {
-      width: fit-content; }
-    .Symptômes__symp__content1__p2 {
-      line-height: 30px; }
-    .Symptômes__symp__content1__a__button {
-      padding: 10px 90px;
-      color: #d0e5f0;
-      background-color: #1078ad;
-      border: none;
-      border-radius: 5px;
-      font-weight: bolder;
-      font-size: 15px; }
-
-.Symptômes__srv {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "h1 h1" "Fièvre Nausées" "Gêne Toux";
-  align-items: center; }
-  .Symptômes__srv__h1 {
-    color: #1078ad;
-    grid-area: h1;
-    margin: 40px 0; }
-  .Symptômes__srv__Fièvre {
-    grid-area: Fièvre; }
-    .Symptômes__srv__Fièvre__img {
-      width: 4em; }
-  .Symptômes__srv__Nausées {
-    grid-area: Nausées;
-    align-self: self-end; }
-    .Symptômes__srv__Nausées__img {
-      width: 7em; }
-  .Symptômes__srv__Toux {
-    grid-area: Toux;
-    align-self: self-end; }
-    .Symptômes__srv__Toux__img {
-      width: 8em; }
-  .Symptômes__srv__Gêne {
-    grid-area: Gêne; }
-    .Symptômes__srv__Gêne__img {
-      width: 9em; }
-
 .Recommandations {
   background-color: #1078ad;
   padding: 10px; }
@@ -152,25 +75,6 @@ body {
       .Recommandations__content__cont2__a {
         color: #d0e5f0;
         text-decoration-color: #f4cf1b; }
-
-.HeroFooter__test {
-  background-color: #d0e5f0;
-  text-align: center;
-  padding: 20px 0; }
-  .HeroFooter__test__h1 {
-    color: #1078ad; }
-  .HeroFooter__test__img {
-    width: auto; }
-  .HeroFooter__test__a {
-    text-decoration: none; }
-    .HeroFooter__test__a__button {
-      padding: 10px 90px;
-      color: #d0e5f0;
-      background-color: #1078ad;
-      border: none;
-      border-radius: 5px;
-      font-weight: bolder;
-      font-size: 15px; }
 
 .HeroFooter__footer {
   text-align: center; }
@@ -228,3 +132,191 @@ body {
   .HeroFooter__footer__color {
     background-color: #1078ad;
     height: 20px; }
+
+.protéger {
+  text-align: center; }
+  .protéger__h1 {
+    color: #1078ad; }
+  .protéger__saluer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr)); }
+    .protéger__saluer__salu {
+      align-self: flex-end; }
+      .protéger__saluer__salu__img {
+        width: 7em; }
+      .protéger__saluer__salu__h4 {
+        color: #1078ad; }
+    .protéger__saluer__Lavez__img {
+      width: 6em; }
+    .protéger__saluer__Lavez__h4 {
+      color: #1078ad; }
+    .protéger__saluer__masque__img {
+      width: 6em; }
+    .protéger__saluer__masque__h4 {
+      color: #1078ad; }
+    .protéger__saluer__Toussez__img {
+      width: 6em; }
+    .protéger__saluer__Toussez__h4 {
+      color: #1078ad; }
+    .protéger__saluer__Bouche__img {
+      width: 6em; }
+    .protéger__saluer__Bouche__h4 {
+      color: #1078ad; }
+    .protéger__saluer__rassemblements__img {
+      width: 6em; }
+    .protéger__saluer__rassemblements__h4 {
+      color: #1078ad; }
+
+.surveiller {
+  text-align: center; }
+  .surveiller__h1 {
+    grid-column: span 1;
+    color: #1078ad; }
+  .surveiller__span1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: span 2; }
+    .surveiller__span1__Fièvre__img {
+      width: 4em; }
+    .surveiller__span1__Nausées {
+      align-self: center; }
+      .surveiller__span1__Nausées__img {
+        width: 6em; }
+    .surveiller__span1__Toux__img {
+      width: 8em; }
+    .surveiller__span1__Gêne__img {
+      width: 8em; }
+  .surveiller__span2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: span 2; }
+    .surveiller__span2__projection__img {
+      width: 6em; }
+    .surveiller__span2__rassemblements__img {
+      width: 6em; }
+
+.Informations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  text-align: center;
+  background-color: #d0e5f0; }
+  .Informations__inf {
+    color: #1078ad;
+    font-weight: bold; }
+  .Informations__covidmaroc {
+    align-self: center; }
+    .Informations__covidmaroc__a {
+      padding: 0 0 20px 0; }
+      .Informations__covidmaroc__a__button {
+        max-width: 13rem;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 3px;
+        color: #d0e5f0;
+        background-color: #1078ad; }
+  .Informations__savoir {
+    align-self: center;
+    padding: 20px 0 30px 0; }
+    .Informations__savoir__a__button {
+      max-width: 13rem;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 3px;
+      color: #d0e5f0;
+      background-color: #1078ad; }
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 470px;
+  font-family: 'Cairo', sans-serif; }
+
+.HeroHeader__InfoMedical {
+  padding: 10px 30px;
+  margin: 0;
+  text-align: center;
+  background-color: #f4cf1b; }
+  .HeroHeader__InfoMedical__h1 {
+    font-size: 1.3em; }
+  .HeroHeader__InfoMedical__p {
+    max-width: 950px;
+    margin: auto;
+    padding: 0 0 20px 0;
+    color: #1078ad;
+    line-height: 2em; }
+
+.Symptômes__symp {
+  text-align: center;
+  padding: 30px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }
+  .Symptômes__symp__Dimg__img {
+    width: 24rem;
+    justify-self: center;
+    padding: 30px 0 0 0; }
+  .Symptômes__symp__content1 {
+    padding: 0 0 20px 0; }
+    .Symptômes__symp__content1__p1 {
+      color: #1078ad;
+      font-weight: bold;
+      line-height: 30px; }
+    .Symptômes__symp__content1__img {
+      width: fit-content; }
+    .Symptômes__symp__content1__p2 {
+      line-height: 30px; }
+    .Symptômes__symp__content1__a__button {
+      padding: 10px 90px;
+      color: #d0e5f0;
+      background-color: #1078ad;
+      border: none;
+      border-radius: 5px;
+      font-weight: bolder;
+      font-size: 15px; }
+
+.Symptômes__srv {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "h1 h1" "Fièvre Nausées" "Gêne Toux";
+  align-items: center; }
+  .Symptômes__srv__h1 {
+    color: #1078ad;
+    grid-area: h1;
+    margin: 40px 0; }
+  .Symptômes__srv__Fièvre {
+    grid-area: Fièvre; }
+    .Symptômes__srv__Fièvre__img {
+      width: 4em; }
+  .Symptômes__srv__Nausées {
+    grid-area: Nausées;
+    align-self: self-end; }
+    .Symptômes__srv__Nausées__img {
+      width: 7em; }
+  .Symptômes__srv__Toux {
+    grid-area: Toux;
+    align-self: self-end; }
+    .Symptômes__srv__Toux__img {
+      width: 8em; }
+  .Symptômes__srv__Gêne {
+    grid-area: Gêne; }
+    .Symptômes__srv__Gêne__img {
+      width: 9em; }
+
+.HeroFooter__test {
+  background-color: #d0e5f0;
+  text-align: center;
+  padding: 20px 0; }
+  .HeroFooter__test__h1 {
+    color: #1078ad; }
+  .HeroFooter__test__img {
+    width: auto; }
+  .HeroFooter__test__a {
+    text-decoration: none; }
+    .HeroFooter__test__a__button {
+      padding: 10px 90px;
+      color: #d0e5f0;
+      background-color: #1078ad;
+      border: none;
+      border-radius: 5px;
+      font-weight: bolder;
+      font-size: 15px; }
