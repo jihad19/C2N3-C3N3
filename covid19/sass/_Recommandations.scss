@@ -4,6 +4,7 @@
 	background-color: $basic-color1;
 	padding: 10px;
 	&__h1 {
+		font-size: 2em;
 		margin: 0;
 		color: $basic-color3;
 		text-align: center;
@@ -12,7 +13,9 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 		&__cont1 {
-			justify-self: center;
+			font-size: 1.3em;
+			justify-self: auto;
+
 			text-align: center;
 			&__h2 {
 				color: $basic-color3;
@@ -24,7 +27,8 @@
 		&__cont2 {
 			align-self: center;
 			text-align: center;
-			padding: 0 0 5px 0;
+			padding: 0 0 2px 0;
+			font-size: 1.3em;
 			&__h4 {
 				color: $basic-color2;
 			}
@@ -33,6 +37,7 @@
 				color: $basic-color1;
 				border: none;
 				padding: 10px;
+				font-size: 1.1em;
 			}
 			&__a {
 				color: $basic-color3;

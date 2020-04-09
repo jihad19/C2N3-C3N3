@@ -48,6 +48,7 @@
   background-color: #1078ad;
   padding: 10px; }
   .Recommandations__h1 {
+    font-size: 2em;
     margin: 0;
     color: #d0e5f0;
     text-align: center; }
@@ -55,7 +56,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr)); }
     .Recommandations__content__cont1 {
-      justify-self: center;
+      font-size: 1.3em;
+      justify-self: auto;
       text-align: center; }
       .Recommandations__content__cont1__h2 {
         color: #d0e5f0; }
@@ -64,160 +66,19 @@
     .Recommandations__content__cont2 {
       align-self: center;
       text-align: center;
-      padding: 0 0 5px 0; }
+      padding: 0 0 2px 0;
+      font-size: 1.3em; }
       .Recommandations__content__cont2__h4 {
         color: #f4cf1b; }
       .Recommandations__content__cont2__button {
         background-color: #f4cf1b;
         color: #1078ad;
         border: none;
-        padding: 10px; }
+        padding: 10px;
+        font-size: 1.1em; }
       .Recommandations__content__cont2__a {
         color: #d0e5f0;
         text-decoration-color: #f4cf1b; }
-
-.HeroFooter__footer {
-  text-align: center; }
-  .HeroFooter__footer__img {
-    width: auto;
-    padding: 10px 0 0 0; }
-  .HeroFooter__footer__grid {
-    padding: 30px 0 0 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr)); }
-    .HeroFooter__footer__grid__grid2 {
-      display: flex;
-      justify-content: space-around; }
-      .HeroFooter__footer__grid__grid2__lang {
-        align-self: center; }
-        .HeroFooter__footer__grid__grid2__lang__button {
-          background-color: initial;
-          border-color: #1078ad;
-          border-radius: 5px;
-          padding: 5px; }
-          .HeroFooter__footer__grid__grid2__lang__button__a {
-            display: flex;
-            color: #1078ad;
-            text-decoration: none; }
-            .HeroFooter__footer__grid__grid2__lang__button__a__img {
-              width: 1em;
-              padding: 0 0 0 4px; }
-        .HeroFooter__footer__grid__grid2__lang__ul {
-          padding: 0; }
-          .HeroFooter__footer__grid__grid2__lang__ul__li {
-            list-style: none; }
-            .HeroFooter__footer__grid__grid2__lang__ul__li__a {
-              padding: 0 0 8px 0;
-              text-decoration: none;
-              color: black;
-              display: block; }
-      .HeroFooter__footer__grid__grid2__contacts__h3 {
-        color: #1078ad; }
-      .HeroFooter__footer__grid__grid2__contacts__h4--chiffre {
-        color: black; }
-      .HeroFooter__footer__grid__grid2__contacts__h4--num {
-        color: #369d53; }
-      .HeroFooter__footer__grid__grid2__contacts__h4--aide {
-        color: black; }
-      .HeroFooter__footer__grid__grid2__contacts__h4--114 {
-        color: #369d53; }
-    .HeroFooter__footer__grid__algorithme {
-      align-self: center;
-      justify-self: center; }
-      .HeroFooter__footer__grid__algorithme__p {
-        max-width: 600px;
-        padding: 5px;
-        color: black;
-        opacity: 0.6; }
-  .HeroFooter__footer__color {
-    background-color: #1078ad;
-    height: 20px; }
-
-.Informations__covidmaroc__a__button, .Informations__savoir__a__button {
-  max-width: 13rem;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 3px;
-  color: #d0e5f0;
-  background-color: #1078ad; }
-
-.protéger {
-  text-align: center; }
-  .protéger__h1 {
-    color: #1078ad; }
-  .protéger__saluer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr)); }
-    .protéger__saluer__salu {
-      align-self: flex-end; }
-      .protéger__saluer__salu__img {
-        width: 7em; }
-      .protéger__saluer__salu__h4 {
-        color: #1078ad; }
-    .protéger__saluer__Lavez__img {
-      width: 6em; }
-    .protéger__saluer__Lavez__h4 {
-      color: #1078ad; }
-    .protéger__saluer__masque__img {
-      width: 6em; }
-    .protéger__saluer__masque__h4 {
-      color: #1078ad; }
-    .protéger__saluer__Toussez__img {
-      width: 6em; }
-    .protéger__saluer__Toussez__h4 {
-      color: #1078ad; }
-    .protéger__saluer__Bouche__img {
-      width: 6em; }
-    .protéger__saluer__Bouche__h4 {
-      color: #1078ad; }
-    .protéger__saluer__rassemblements__img {
-      width: 6em; }
-    .protéger__saluer__rassemblements__h4 {
-      color: #1078ad; }
-
-.surveiller {
-  text-align: center; }
-  .surveiller__h1 {
-    grid-column: span 1;
-    color: #1078ad; }
-  .surveiller__span1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column: span 2; }
-    .surveiller__span1__Fièvre__img {
-      width: 4em; }
-    .surveiller__span1__Nausées {
-      align-self: center; }
-      .surveiller__span1__Nausées__img {
-        width: 6em; }
-    .surveiller__span1__Toux__img {
-      width: 8em; }
-    .surveiller__span1__Gêne__img {
-      width: 8em; }
-  .surveiller__span2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column: span 2; }
-    .surveiller__span2__projection__img {
-      width: 6em; }
-    .surveiller__span2__rassemblements__img {
-      width: 6em; }
-
-.Informations {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  text-align: center;
-  background-color: #d0e5f0; }
-  .Informations__inf {
-    color: #1078ad;
-    font-weight: bold; }
-  .Informations__covidmaroc {
-    align-self: center; }
-    .Informations__covidmaroc__a {
-      padding: 0 0 20px 0; }
-  .Informations__savoir {
-    align-self: center;
-    padding: 20px 0 30px 0; }
 
 body {
   margin: 0;
@@ -231,13 +92,14 @@ body {
   text-align: center;
   background-color: #f4cf1b; }
   .HeroHeader__InfoMedical__h1 {
-    font-size: 1.3em; }
+    font-size: 1.5em; }
   .HeroHeader__InfoMedical__p {
     max-width: 950px;
     margin: auto;
     padding: 0 0 20px 0;
     color: #1078ad;
-    line-height: 2em; }
+    line-height: 2em;
+    font-size: 1.4em; }
 
 .Symptômes__symp {
   text-align: center;
@@ -253,11 +115,13 @@ body {
     .Symptômes__symp__content1__p1 {
       color: #1078ad;
       font-weight: bold;
+      font-size: 1.2em;
       line-height: 30px; }
     .Symptômes__symp__content1__img {
       width: fit-content; }
     .Symptômes__symp__content1__p2 {
-      line-height: 30px; }
+      line-height: 30px;
+      font-size: 1.2em; }
     .Symptômes__symp__content1__a__button {
       padding: 10px 90px;
       color: #d0e5f0;
@@ -265,7 +129,7 @@ body {
       border: none;
       border-radius: 5px;
       font-weight: bolder;
-      font-size: 15px; }
+      font-size: 20px; }
 
 .Symptômes__srv {
   text-align: center;
@@ -313,4 +177,164 @@ body {
       border: none;
       border-radius: 5px;
       font-weight: bolder;
-      font-size: 15px; }
+      font-size: 20px; }
+
+.HeroFooter__footer {
+  text-align: center; }
+  .HeroFooter__footer__img {
+    width: 7em;
+    padding: 10px 0 0 0; }
+  .HeroFooter__footer__grid {
+    padding: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr)); }
+    .HeroFooter__footer__grid__grid2 {
+      display: flex;
+      justify-content: space-around;
+      font-size: 1.2em; }
+      .HeroFooter__footer__grid__grid2__lang {
+        align-self: center; }
+        .HeroFooter__footer__grid__grid2__lang__button {
+          background-color: initial;
+          border-color: #1078ad;
+          border-radius: 5px;
+          padding: 5px; }
+          .HeroFooter__footer__grid__grid2__lang__button__a {
+            display: flex;
+            color: #1078ad;
+            text-decoration: none;
+            font-size: 1.5em; }
+            .HeroFooter__footer__grid__grid2__lang__button__a__img {
+              width: 1em;
+              padding: 0 0 0 4px; }
+        .HeroFooter__footer__grid__grid2__lang__ul {
+          padding: 0; }
+          .HeroFooter__footer__grid__grid2__lang__ul__li {
+            list-style: none; }
+            .HeroFooter__footer__grid__grid2__lang__ul__li__a {
+              padding: 0 0 8px 0;
+              text-decoration: none;
+              color: black;
+              display: block;
+              font-size: 1.2em; }
+      .HeroFooter__footer__grid__grid2__contacts {
+        font-size: 1.1em; }
+        .HeroFooter__footer__grid__grid2__contacts__h3 {
+          color: #1078ad; }
+        .HeroFooter__footer__grid__grid2__contacts__h4--chiffre {
+          color: black; }
+        .HeroFooter__footer__grid__grid2__contacts__h4--num {
+          color: #369d53; }
+        .HeroFooter__footer__grid__grid2__contacts__h4--aide {
+          color: black; }
+        .HeroFooter__footer__grid__grid2__contacts__h4--114 {
+          color: #369d53; }
+    .HeroFooter__footer__grid__algorithme {
+      align-self: center;
+      justify-self: center; }
+      .HeroFooter__footer__grid__algorithme__p {
+        font-size: 1.3em;
+        max-width: 600px;
+        padding: 5px;
+        color: black;
+        opacity: 0.6; }
+  .HeroFooter__footer__color {
+    background-color: #1078ad;
+    height: 20px; }
+
+.Informations__covidmaroc__a__button, .Informations__savoir__a__button {
+  font-size: 1.3em;
+  max-width: 16rem;
+  border: none;
+  border-radius: 3px;
+  color: #d0e5f0;
+  background-color: #1078ad; }
+
+.protéger {
+  text-align: center;
+  font-size: 1.3em; }
+  .protéger__h1 {
+    color: #1078ad; }
+  .protéger__saluer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr)); }
+    .protéger__saluer__salu {
+      align-self: flex-end; }
+      .protéger__saluer__salu__img {
+        width: 7em; }
+      .protéger__saluer__salu__h4 {
+        color: #1078ad; }
+    .protéger__saluer__Lavez__img {
+      width: 6em; }
+    .protéger__saluer__Lavez__h4 {
+      color: #1078ad; }
+    .protéger__saluer__masque__img {
+      width: 6em; }
+    .protéger__saluer__masque__h4 {
+      color: #1078ad; }
+    .protéger__saluer__Toussez {
+      align-self: flex-end; }
+      .protéger__saluer__Toussez__img {
+        width: 6em; }
+      .protéger__saluer__Toussez__h4 {
+        color: #1078ad; }
+    .protéger__saluer__Bouche__img {
+      width: 6em; }
+    .protéger__saluer__Bouche__h4 {
+      color: #1078ad; }
+    .protéger__saluer__rassemblements__img {
+      width: 6em; }
+    .protéger__saluer__rassemblements__h4 {
+      color: #1078ad; }
+
+.surveiller {
+  text-align: center;
+  font-size: 1.3em; }
+  .surveiller__h1 {
+    grid-column: span 1;
+    color: #1078ad; }
+  .surveiller__span1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: span 2; }
+    .surveiller__span1__Fièvre__img {
+      width: 4em; }
+    .surveiller__span1__Nausées {
+      align-self: flex-end; }
+      .surveiller__span1__Nausées__img {
+        width: 6em; }
+    .surveiller__span1__Toux {
+      align-self: flex-end; }
+      .surveiller__span1__Toux__img {
+        width: 8em; }
+    .surveiller__span1__Gêne__img {
+      width: 8em; }
+  .surveiller__span2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: span 2; }
+    .surveiller__span2__projection__img {
+      width: 6em; }
+    .surveiller__span2__rassemblements__img {
+      width: 6em; }
+
+.Informations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  text-align: center;
+  background-color: #d0e5f0; }
+  .Informations__inf {
+    font-size: 1.3em;
+    color: #1078ad;
+    font-weight: bold; }
+  .Informations__covidmaroc {
+    align-self: center; }
+    .Informations__covidmaroc__a {
+      padding: 0 0 30px 0; }
+      .Informations__covidmaroc__a__button, .Informations__savoir__a__button {
+        padding: 15px 8px; }
+  .Informations__savoir {
+    align-self: center;
+    padding: 20px 0 30px 0; }
+    .Informations__savoir__a__button {
+      padding: 15px 40px; }
