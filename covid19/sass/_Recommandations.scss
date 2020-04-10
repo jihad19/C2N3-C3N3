@@ -1,6 +1,7 @@
 @import "variables";
 
 .Recommandations {
+	//*grid:(auto-fit , minmax)*//
 	background-color: $basic-color1;
 	padding: 10px;
 	&__h1 {
