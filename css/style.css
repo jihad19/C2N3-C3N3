@@ -107,7 +107,7 @@ body {
 
 .Symptômes__symp {
   /*Symptômes-Questions:
-	    - [grid (auto-fit , minmax)]*/
+	    [grid (auto-fit , minmax)]*/
   text-align: center;
   padding: 30px 0 0 0;
   display: grid;
