@@ -122,9 +122,10 @@ body {
       color: #1078ad;
       font-weight: bold;
       font-size: 1.2em;
-      line-height: 30px; }
+      line-height: 30px;
+      padding: 0 5px; }
     .Symptômes__symp__content1__img {
-      width: fit-content; }
+      width: 4em; }
     .Symptômes__symp__content1__p2 {
       line-height: 30px;
       font-size: 1.2em; }
@@ -146,7 +147,7 @@ body {
   .Symptômes__srv__h1 {
     color: #1078ad;
     grid-area: h1;
-    margin: 40px 0; }
+    margin: 0 0 20px 0; }
   .Symptômes__srv__Fièvre {
     grid-area: Fièvre; }
     .Symptômes__srv__Fièvre__img {
@@ -169,13 +170,14 @@ body {
 .HeroFooter__test {
   background-color: #d0e5f0;
   text-align: center;
-  padding: 20px 0; }
+  padding: 20px 0 40px 0; }
   .HeroFooter__test__h1 {
     color: #1078ad; }
   .HeroFooter__test__img {
-    width: auto; }
+    width: 5em; }
   .HeroFooter__test__a {
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 0 0 30px 0; }
     .HeroFooter__test__a__button {
       padding: 10px 90px;
       color: #d0e5f0;
@@ -250,7 +252,6 @@ body {
 
 .Informations__covidmaroc__a__button, .Informations__savoir__a__button {
   font-size: 1.3em;
-  max-width: 16rem;
   border: none;
   border-radius: 3px;
   color: #d0e5f0;
@@ -338,9 +339,9 @@ body {
     .Informations__covidmaroc__a {
       padding: 0 0 30px 0; }
       .Informations__covidmaroc__a__button, .Informations__savoir__a__button {
-        padding: 15px 8px; }
+        padding: 15px 14px; }
   .Informations__savoir {
     align-self: center;
     padding: 20px 0 30px 0; }
     .Informations__savoir__a__button {
-      padding: 15px 40px; }
+      padding: 15px 46px; }
