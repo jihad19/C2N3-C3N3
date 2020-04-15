@@ -1,0 +1,28 @@
+@import "variables";
+
+.error {
+	text-align: center;
+	&__img {
+		width: 28em;
+		padding: 40px 5px 0 5px;
+		margin: auto;
+	}
+	&__h1 {
+		font-size: 2.6em;
+		color: $basic-color1;
+		margin: 0;
+	}
+	&__a {
+		margin: 0;
+		&__button {
+			padding: 10px 30px;
+			margin: 40px 0 50px 0;
+			color: $basic-color3;
+			background-color: $basic-color1;
+			border: none;
+			border-radius: 5px;
+			font-weight: bolder;
+			font-size: 20px;
+		}
+	}
+}
