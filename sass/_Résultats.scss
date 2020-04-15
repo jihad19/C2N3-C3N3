@@ -1,31 +1,35 @@
 @import "variables";
 
-.TestPg {
+.Résultats {
 	text-align: center;
 	margin: 0 100px;
 
 	&__img {
 		width: 24em;
 		padding: 40px 0 0 0;
-		margin: 0 0px 20px -53px;
+		margin: 0 0 0 -55px;
 	}
 
-	&__blue {
-		background-color: $basic-color3;
+	&__green {
+		font-size: 2.5em;
+		padding: 0 0 10px 0;
+		color: green;
+	}
+
+	&__restez {
+		background-color: $basic-color1;
 		padding: 10px;
 		border-radius: 40px;
-		box-shadow: 6px 6px $basic-color1 inset, -6px -6px $basic-color4 inset;
+		box-shadow: 6px 6px $basic-color4 inset;
 		&__h1 {
 			font-size: 2.3em;
-			color: $basic-color1;
+			color: $basic-color3;
 			margin: 0;
 		}
 		&__p {
-			font-size: 1.2em;
-		}
-		&__hr {
-			width: 9em;
-			border: solid $basic-color2;
+			font-size: 1.4em;
+			color: $basic-color2;
+			font-weight: bold;
 		}
 	}
 	&__a {
