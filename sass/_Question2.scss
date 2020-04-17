@@ -1,1 +1,9 @@
 @import "variables";
+.Questionnaire__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column: 2 span;
+	padding: 0;
+	margin: 0;
+	justify-items: center;
+}

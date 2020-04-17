@@ -377,6 +377,67 @@ body {
     font-weight: bolder;
     font-size: 20px; }
 
+.Questionnaire {
+  text-align: center; }
+  .Questionnaire__img1__img {
+    width: 24em;
+    padding: 20px 0 0 0; }
+  .Questionnaire__img2__img {
+    max-width: 460px; }
+  .Questionnaire__p {
+    font-size: 2em;
+    padding: 0 5px;
+    min-width: 300px;
+    opacity: 0.6; }
+  .Questionnaire__Oui {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    display: inline-block; }
+    .Questionnaire__Oui__inp {
+      display: none; }
+    .Questionnaire__Oui__spn {
+      width: 20px;
+      height: 20px;
+      background-color: #1078ad;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      left: -30px; }
+    .Questionnaire__Oui__inp:checked + .Questionnaire__Oui__spn {
+      background-color: aqua; }
+    .Questionnaire__Oui__inp:checked + .Questionnaire__Oui__spn:after {
+      background-color: #f4cf1b;
+      width: 40px;
+      height: 40px; }
+  .Questionnaire__text {
+    background-color: #f4cf1b; }
+    .Questionnaire__text__h1 {
+      font-weight: bolder;
+      font-size: 2em; }
+    .Questionnaire__text__p {
+      padding: 10px; }
+  .Questionnaire__a__button {
+    padding: 10px 30px;
+    margin: 40px 0 50px 0;
+    color: #d0e5f0;
+    background-color: #1078ad;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 20px; }
+
+.Questionnaire__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 2 span;
+  padding: 0;
+  margin: 0;
+  justify-items: center; }
+
+.Questionnaire__Oui {
+  font-size: 25px; }
+
 .Résultats {
   text-align: center;
   margin: 0 100px; }
