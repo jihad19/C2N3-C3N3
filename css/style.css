@@ -378,38 +378,19 @@ body {
     font-size: 20px; }
 
 .Questionnaire {
+  margin: auto;
   text-align: center; }
   .Questionnaire__img1__img {
     width: 24em;
     padding: 20px 0 0 0; }
-  .Questionnaire__img2__img {
-    max-width: 460px; }
+  .Questionnaire__h1 {
+    font-size: 1.6em;
+    color: #96c5dc;
+    text-shadow: -1px -1.5px #1078ad; }
   .Questionnaire__p {
     font-size: 2em;
-    padding: 0 5px;
-    min-width: 300px;
+    padding: 0 15px 15px 15px;
     opacity: 0.6; }
-  .Questionnaire__Oui {
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-    display: inline-block; }
-    .Questionnaire__Oui__inp {
-      display: none; }
-    .Questionnaire__Oui__spn {
-      width: 20px;
-      height: 20px;
-      background-color: #1078ad;
-      border-radius: 50%;
-      position: absolute;
-      top: 5px;
-      left: -30px; }
-    .Questionnaire__Oui__inp:checked + .Questionnaire__Oui__spn {
-      background-color: aqua; }
-    .Questionnaire__Oui__inp:checked + .Questionnaire__Oui__spn:after {
-      background-color: #f4cf1b;
-      width: 40px;
-      height: 40px; }
   .Questionnaire__text {
     background-color: #f4cf1b; }
     .Questionnaire__text__h1 {
@@ -427,16 +408,38 @@ body {
     font-weight: bolder;
     font-size: 20px; }
 
-.Questionnaire__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column: 2 span;
-  padding: 0;
-  margin: 0;
-  justify-items: center; }
-
-.Questionnaire__Oui {
-  font-size: 25px; }
+.Questionnaire__RadioGroupe {
+  display: flex;
+  justify-content: center; }
+  .Questionnaire__RadioGroupe__label {
+    font-size: 1.5em;
+    margin: 0 100px;
+    position: relative; }
+    .Questionnaire__RadioGroupe__label__input {
+      display: none; }
+    .Questionnaire__RadioGroupe__label__span {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      border: 3px solid #1078ad;
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: -35px; }
+      .Questionnaire__RadioGroupe__label__span:after {
+        content: "";
+        height: 12px;
+        width: 12px;
+        background: #f4cf1b;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 50%;
+        transition: 300ms ease-in-out 0s; }
+    .Questionnaire__RadioGroupe__label__input:checked ~ span::after {
+      transform: translate(-50%, -50%) scale(1); }
 
 .Résultats {
   text-align: center;
