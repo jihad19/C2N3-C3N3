@@ -1,13 +1,12 @@
 @import "variables";
 .Questionnaire {
 	&__RadioGroupe {
-		display: grid;
-		justify-content: center;
-		margin-left: 19px;
+		text-align: center;
+		margin: 0 139px 0px 6px;
 		&__label {
 			font-size: 1.5em;
 			position: relative;
-			margin: 0 100px;
+			margin: 0px 0 0 177px;
 			&__input {
 				display: none;
 			}
