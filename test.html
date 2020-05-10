@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <title>Test-Covid-19</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    
 </head>
 <body>
 
-<!--Début de Header-->
+<!--------------------------Début de Header----------------------------->
 
     <section class="HeroHeader">
 
@@ -31,95 +34,159 @@
             
         </div>
 
-<!--Début du test-->
-
-    <section class="TestPg">
-        <img class="TestPg__img" src="images/Informations.png" alt="Informations.png">
-        <div class="TestPg__blue">
-             <h1 class="TestPg__blue__h1">Préambule</h1>
-             <p class="TestPg__blue__p">« L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour contribuer à fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à disposition dans cette application, ou leur adéquation à des finalités particulières, ne sont pas garantis.</p> 
-             <hr class="TestPg__blue__hr">
-             <p class="TestPg__blue__p"> L’utilisation de l’application et de son contenu ne remplace en aucun cas le conseil nécessaire donné par votre médecin ou votre pharmacien ou tout autre professionnel de santé compétent dans chaque cas particulier. Tout examen ou décision de l’utilisateur doit être réalisé ou prise de manière autonome sur la base de l’information scientifique et clinique pertinente, de la notice officielle du produit concerné le cas échéant et en cas de doute, en consultant un médecin compétent. </p> 
+<!--------------------------- Stepper ---------------------------> 
+    <div class="tribar">
+        <div class="tribar__informations">
+            <div class="circle">
+                <div class="mini-circle"></div>
+            </div>
+            <span>Informations</span>
         </div>
-        <a class="TestPg__a" href="Question1.html"><button class="TestPg__a__button">Demarer le test</button></a>
+        <div class="tribar__questionnaire">
+            <div class="circle"><div class="mini-circle"></div></div>
+            <span>Questionnaire</span>
+        </div>
+        <div class="tribar__resultat">
+            <div class="circle"><div class="mini-circle"></div></div>
+            <span>Résultats</span>
+        </div>
+    </div>
+
+<!--------------------------- Preambule ---------------------------> 
+    <section class="preambule">
+        <h1 class="preambule__h1">Préambule</h1>
+        <div class="preambule__top">
+             L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour contribuer à fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à disposition dans cette application, ou leur adéquation à des finalités particulières, ne sont pas garantis.
+        </div>
+        <hr class="preambule__hr">
+        <div class="preambule__bottom">
+            L’utilisation de l’application et de son contenu ne remplace en aucun cas le conseil nécessaire donné par votre médecin ou votre pharmacien ou tout autre professionnel de santé compétent dans chaque cas particulier. Tout examen ou décision de l’utilisateur doit être réalisé ou prise de manière autonome sur la base de l’information scientifique et clinique pertinente, de la notice officielle du produit concerné le cas échéant et en cas de doute, en consultant un médecin compétent. 
+        </div>
     </section>
 
-<!--Début de Recommandations-->
+<!--------------------------- launch Btn ---------------------------> 
+    <div class="launch">
+        <button class="launch__button">Démarrer Le Test</button>
+    </div>
+<!--------------------------- Progress ---------------------------> 
+    <div class="progress">
+        <div class="progress__bar">
+            <div class="progress__bar__fill"></div>
+        </div>
+        <span class="progess__value">0%</span>
+    </div>
+
+<!--------------------------- Questions ---------------------------> 
+    <section class="questions">
+        <h3 class="questions__text">Pensez-vous avoir ou avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?</h3>
+        <form class="questions__form">
+           
+        </form>
+
+        <!------- Buttons --------> 
+        <div class="buttons">
+            <button class="buttons__previous">Question précedente</button>
+            <button class="buttons__next">Question suivante</button>
+        </div>
+    </section>
+
+<!--------------------------- Resultat ---------------------------> 
+    <section class="resultat">
+        <h4 class="resultat__h4"> Resultat </h4>
+        <div class="resultat__block">
+            <h2 class="resultat__block__h2"> </h2>
+            <p class="resultat__block__p"> </p>
+        </div>
+        <button class="resultat__reprendre">Reprendre le test</button>
+    </section>
+
+<!--------------------------- Questionnaire-Anti ---------------------------> 
+
+    <div class="anti">
+        <h3 class="anti__h3">Anti-inflammatoires non stéroïdiens</h3>
+        <p class="anti__text">
+            La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur d'aggravation de l’infection. En cas de fièvre, prenez du paracétamol. Cette remarque concerte les traitements par gélules ou comprimés et ne concerne pas les formes inhalées. Si vous êtes déjà sous traitement, n'arrêtez pas ce traitement, demandez l'avis de votre médecin ou de votre pharmacien. </p>
+    </div>
+    
+
+<!----------------------Début de Recommandations-------------------->
 
     <section class="Recommandations">
 
-    <!--Recommandations:text-->
-
-        <h1 class="Recommandations__h1">Recommandations officielles</h1>
-        <div class="Recommandations__content">
-            <div class="Recommandations__content__cont1">
-                <h3 class="Recommandations__content__cont1__h2">Si vous pensez être malade:</h3>
-                <p class="Recommandations__content__cont1__p">
-                        évitez les endroits publics. <br> 
-                        Ne rendez pas visite aux personnes fragiles.<br>  
-                        Évitez de sortir de chez vous. <br> 
-                        Respectez les mesures barrière (lavage de main, masque).<br> 
-                        Surveillez vos symptômes, l’évolution de votre température <br> 
-                        corporelle et recherchez un avis médical.
-                </p>
-            </div>
-
-    <!--Recommandations:contact-->
-
-            <div class="Recommandations__content__cont2">
-                <h4 class="Recommandations__content__cont2__h4">Apple Gratuit</h4>
-                <button class="Recommandations__content__cont2__button">080 100 47 47</button><br><br>
-                <a class="Recommandations__content__cont2__a" href="#">www.sante.gov.ma</a>
-            </div>
-        </div>
-
-    </section>
-
-<!--Début de Footer-->
-
-        <div class="HeroFooter__footer">
-
-            <img class="HeroFooter__footer__img" src="images/logo__sante.svg" alt="logo__sante.svg">
-        
-            <div class="HeroFooter__footer__grid">
-                <div class="HeroFooter__footer__grid__grid2">
-
-                <!--Footer:lang-->
-
-                    <div class="HeroFooter__footer__grid__grid2__lang">
-                        <button class="HeroFooter__footer__grid__grid2__lang__button"><a class="HeroFooter__footer__grid__grid2__lang__button__a" href="AR-covid19/ar-index.html"><bdi>Français</bdi><img class="HeroFooter__footer__grid__grid2__lang__button__a__img" src="images/material-language.png" alt="material-language.png"></a></button>
-                        <ul class="HeroFooter__footer__grid__grid2__lang__ul">
-                                <li class="HeroFooter__footer__grid__grid2__lang__ul__li">
-                                    <a class="HeroFooter__footer__grid__grid2__lang__ul__li__a" href="#">Accueil</a>
-                                    <a class="HeroFooter__footer__grid__grid2__lang__ul__li__a" href="#">Conseil</a>
-                                </li>
-                        </ul>
-                    </div>
-
-                <!--Footer:contacts-->
-
-                    <div class="HeroFooter__footer__grid__grid2__contacts">
-                        <h3 class="HeroFooter__footer__grid__grid2__contacts__h3">Contacts utiles</h3>
-                        <h4 class="HeroFooter__footer__grid__grid2__contacts__h4  HeroFooter__footer__grid__grid2__contacts__h4--chiffre">Chiffre économique "Alo épidémie vigilance"</h4>
-                        <h4 class="HeroFooter__footer__grid__grid2__contacts__h4  HeroFooter__footer__grid__grid2__contacts__h4--num">080 100 47 47</h4>
-                        <h4 class="HeroFooter__footer__grid__grid2__contacts__h4  HeroFooter__footer__grid__grid2__contacts__h4--aide">Aide médicale urgente</h4>
-                        <h4 class="HeroFooter__footer__grid__grid2__contacts__h4  HeroFooter__footer__grid__grid2__contacts__h4--114">114</h4>
-                    </div>
+        <!--Recommandations:text-->
+    
+            <h1 class="Recommandations__h1">Recommandations officielles</h1>
+            <div class="Recommandations__content">
+                <div class="Recommandations__content__cont1">
+                    <h3 class="Recommandations__content__cont1__h2">Si vous pensez être malade:</h3>
+                    <p class="Recommandations__content__cont1__p">
+                            évitez les endroits publics. <br> 
+                            Ne rendez pas visite aux personnes fragiles.<br>  
+                            Évitez de sortir de chez vous. <br> 
+                            Respectez les mesures barrière (lavage de main, masque).<br> 
+                            Surveillez vos symptômes, l’évolution de votre température <br> 
+                            corporelle et recherchez un avis médical.
+                    </p>
                 </div>
-
-                <!--Algorithme-->
-
-                <div class="HeroFooter__footer__grid__algorithme">
-                    <p class="HeroFooter__footer__grid__algorithme__p">Algorithme d'orientation mis à jour sur les recommandations en vigueur 
-                    au 22/03/2020 à 16h15.  Ce site d’information n’est pas un dispositif médical, 
-                    il ne délivre pas d’avis médical. Projet solidaire d'urgence,financé par l’Alliance 
-                    Digitale contre le COVID-19 : @maladiecovid19</p>
+    
+        <!--Recommandations:contact-->
+    
+                <div class="Recommandations__content__cont2">
+                    <h4 class="Recommandations__content__cont2__h4">Apple Gratuit</h4>
+                    <button class="Recommandations__content__cont2__button">080 100 47 47</button><br><br>
+                    <a class="Recommandations__content__cont2__a" href="#">www.sante.gov.ma</a>
                 </div>
             </div>
-        </div>
-        <div class="HeroFooter__footer__color"></div>
-    </section>
-</body>
-</html>
-
-
+    
+        </section>
+    
+    <!----------------------------Début de Footer------------------------------>
+    
+            <div class="HeroFooter__footer">
+    
+                <img class="HeroFooter__footer__img" src="images/logo__sante.svg" alt="logo__sante.svg">
+            
+                <div class="HeroFooter__footer__grid">
+                    <div class="HeroFooter__footer__grid__grid2">
+    
+                    <!--Footer:lang-->
+    
+                        <div class="HeroFooter__footer__grid__grid2__lang">
+                            <button class="HeroFooter__footer__grid__grid2__lang__button"><a class="HeroFooter__footer__grid__grid2__lang__button__a" href="AR-covid19/ar-index.html"><bdi>Français</bdi><img class="HeroFooter__footer__grid__grid2__lang__button__a__img" src="images/material-language.png" alt="material-language.png"></a></button>
+                            <ul class="HeroFooter__footer__grid__grid2__lang__ul">
+                                    <li class="HeroFooter__footer__grid__grid2__lang__ul__li">
+                                        <a class="HeroFooter__footer__grid__grid2__lang__ul__li__a" href="#">Accueil</a>
+                                        <a class="HeroFooter__footer__grid__grid2__lang__ul__li__a" href="#">Conseil</a>
+                                    </li>
+                            </ul>
+                        </div>
+    
+                    <!--Footer:contacts-->
+    
+                        <div class="HeroFooter__footer__grid__grid2__contacts">
+                            <h3 class="HeroFooter__footer__grid__grid2__contacts__h3">Contacts utiles</h3>
+                            <h4 class="HeroFooter__footer__grid__grid2__contacts__h4  HeroFooter__footer__grid__grid2__contacts__h4--chiffre">Chiffre économique "Alo épidémie vigilance"</h4>
+                            <h4 class="HeroFooter__footer__grid__grid2__contacts__h4  HeroFooter__footer__grid__grid2__contacts__h4--num">080 100 47 47</h4>
+                            <h4 class="HeroFooter__footer__grid__grid2__contacts__h4  HeroFooter__footer__grid__grid2__contacts__h4--aide">Aide médicale urgente</h4>
+                            <h4 class="HeroFooter__footer__grid__grid2__contacts__h4  HeroFooter__footer__grid__grid2__contacts__h4--114">114</h4>
+                        </div>
+                    </div>
+    
+                    <!--Algorithme-->
+    
+                    <div class="HeroFooter__footer__grid__algorithme">
+                        <p class="HeroFooter__footer__grid__algorithme__p">Algorithme d'orientation mis à jour sur les recommandations en vigueur 
+                        au 22/03/2020 à 16h15.  Ce site d’information n’est pas un dispositif médical, 
+                        il ne délivre pas d’avis médical. Projet solidaire d'urgence,financé par l’Alliance 
+                        Digitale contre le COVID-19 : @maladiecovid19</p>
+                    </div>
+                </div>
+            </div>
+            <div class="HeroFooter__footer__color"></div>
+        </section>
+        <script src="JS/script.js" ></script>
+    </body>
+    </html>
+    
+    
+    

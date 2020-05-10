@@ -1,43 +1,243 @@
 @import "variables";
 
-.TestPg {
+//---------------------------Stepper---------------------
+.tribar {
+	width: 30%;
+	height: 0.2em;
+	margin: 0 auto;
+	border-radius: 1em;
+	background-color: $basic-color1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 4em;
+	margin-top: 2.5rem;
+	&__informations,
+	&__questionnaire,
+	&__resultat {
+		border-radius: 50%;
+		background-color: $basic-color1;
+		width: 0.8em;
+		height: 0.8em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		span {
+			margin-top: 4em;
+			font-size: 0.8rem;
+		}
+		.circle {
+			background-color: $basic-color4;
+			width: 2em;
+			height: 2em;
+			z-index: 0;
+			position: absolute;
+			display: none;
+			border-radius: 50%;
+			.mini-circle {
+				border-radius: 50%;
+				background-color: $basic-color2;
+				width: 0.8em;
+				height: 0.8em;
+				margin: 0.6em;
+			}
+		}
+	}
+}
+
+//----------------------Preambule--------------------------
+.preambule {
 	text-align: center;
 	margin: 0 100px;
+	background-color: $basic-color3;
+	padding: 10px;
+	border-radius: 40px;
+	box-shadow: 6px 6px $basic-color1 inset, -6px -6px $basic-color4 inset;
+	&__h1 {
+		font-size: 2.3em;
+		color: $basic-color1;
+		margin: 0;
+	}
+	&__hr {
+		width: 13em;
+		border: solid $basic-color2;
+	}
+	&__top {
+		font-size: 1.2em;
+	}
+}
 
-	&__img {
-		width: 24em;
-		padding: 40px 0 0 0;
-		margin: 0 0px 20px -53px;
+//----------------------launch Btn--------------------------
+.launch {
+	text-align: center;
+	&__button {
+		padding: 10px 30px;
+		margin: 40px 0 50px 0;
+		color: $basic-color3;
+		background-color: $basic-color1;
+		border: none;
+		border-radius: 5px;
+		font-weight: bolder;
+		font-size: 20px;
+		cursor: pointer;
+	}
+}
+
+//----------------------Début de Progress--------------------------
+.progress {
+	display: flex;
+	justify-content: center;
+	display: none;
+	&__bar {
+		width: 55%;
+		border-radius: 1em;
+		height: 1em;
+		margin: 8px;
+		background-color: $basic-color3;
+		&__fill {
+			background-color: $basic-color1;
+			width: 0%;
+			height: 100%;
+			border-radius: 1em;
+		}
+	}
+}
+
+//------------------------- Questionnaire -------------------------
+.questions {
+	text-align: center;
+	display: none;
+	h3 {
+		padding: 0 15px 15px 15px;
+		opacity: 0.6;
+	}
+	&__form {
+		margin: 0 139px 0px 6px;
+		&__label {
+			font-size: 1.2em;
+			position: relative;
+			margin: 0px 0 0 177px;
+			&__input {
+				display: none;
+			}
+			&__span {
+				height: 15px;
+				width: 15px;
+				border-radius: 50%;
+				border: 3px solid #1078ad;
+				position: absolute;
+				top: 9px;
+				left: -31px;
+				&:after {
+					content: "";
+					height: 9px;
+					width: 9px;
+					background: $basic-color2;
+					display: block;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%) scale(0);
+					border-radius: 50%;
+					transition: 300ms ease-in-out 0s;
+				}
+			}
+			&__input:checked ~ span::after {
+				transform: translate(-50%, -50%) scale(1);
+			}
+		}
+		&__num {
+			margin: 0 0px 0 78px;
+		}
+	}
+}
+
+// ------------------------- Questionnaire-Buttons -------------------------
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	&__previous {
+		display: none;
 	}
 
-	&__blue {
-		background-color: $basic-color3;
+	button {
+		padding: 10px 30px;
+		margin: 40px 0 50px 0;
+		color: $basic-color3;
+		background-color: $basic-color1;
+		border: none;
+		border-radius: 5px;
+		font-weight: bolder;
+		font-size: 20px;
+		cursor: pointer;
+	}
+}
+
+//----------------------Résultats-------------------------
+.resultat {
+	display: none;
+	text-align: center;
+	margin: 0 100px;
+	&__h4 {
+		font-size: 2.5em;
+		padding: 0 0 10px 0;
+		color: green;
+	}
+
+	&__block {
+		background-color: $basic-color1;
 		padding: 10px;
 		border-radius: 40px;
-		box-shadow: 6px 6px $basic-color1 inset, -6px -6px $basic-color4 inset;
-		&__h1 {
+		box-shadow: 6px 6px $basic-color4 inset;
+		&__h2 {
 			font-size: 2.3em;
-			color: $basic-color1;
+			color: $basic-color3;
 			margin: 0;
 		}
 		&__p {
-			font-size: 1.2em;
-		}
-		&__hr {
-			width: 9em;
-			border: solid $basic-color2;
+			font-size: 1.4em;
+			color: $basic-color2;
+			font-weight: bold;
 		}
 	}
-	&__a {
-		&__button {
-			padding: 10px 30px;
-			margin: 40px 0 50px 0;
-			color: $basic-color3;
-			background-color: $basic-color1;
-			border: none;
-			border-radius: 5px;
-			font-weight: bolder;
-			font-size: 20px;
-		}
+
+	&__reprendre {
+		padding: 10px 30px;
+		margin: 40px 0 50px 0;
+		color: $basic-color3;
+		background-color: $basic-color1;
+		border: none;
+		border-radius: 5px;
+		font-weight: bolder;
+		font-size: 20px;
 	}
+}
+
+// ------------------------- Questionnaire-Anti -------------------------
+.anti {
+	text-align: center;
+	background-color: $basic-color2;
+	display: none;
+	&__h3 {
+		font-weight: bolder;
+		font-size: 2em;
+	}
+	&__text {
+		padding: 10px;
+	}
+}
+
+// ---------------------JS--------------------------
+
+.invisible {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+.flex {
+	display: flex;
 }
