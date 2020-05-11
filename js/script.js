@@ -8,279 +8,285 @@ const questionsList = [
 				<label class="questions__form__label for="nom" >
 					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
 					<span class="questions__form__label__span"  ></span>
-				</label>`,
+				</label>
+				<div class="questions__form__anti">
+        			<h3 class="questions__form__anti__h3">Anti-inflammatoires non stéroïdiens</h3>
+        			<p class="questions__form__anti__text">
+						La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur d'aggravation de l’infection. En cas de fièvre, prenez du paracétamol. Cette remarque concerte les traitements par gélules ou comprimés et ne concerne pas les formes inhalées. Si vous êtes déjà sous traitement, n'arrêtez pas ce traitement, demandez l'avis de votre médecin ou de votre pharmacien.
+					</p>
+    			</div>`,
 		number: 1
 	},
 	{
 		text: 'quelle est votre température ?',
 		choices: `<label class="questions__form__num" for="numerique"></label>
-        <input class="questions__form__num" type="number" id="numerique"> Degrée`,
+        		<input class="questions__form__num" type="number" id="numerique"> Degrée`,
 		number: 2
 	},
 	{
 		text: 'Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?',
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 3
 	},
 	{
 		text: 'Avez-vous des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ? ',
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 4
 	},
 	{
 		text: 'Avez-vous un mal de gorge apparu ces derniers jours ? ',
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 5
 	},
 	{
 		text: 'Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?',
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 6
 	},
 	{
 		text: 'Avez-vous une fatigue inhabituelle ces derniers jours ?',
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 7
 	},
 	{
 		text: 'Cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée ?',
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 8
 	},
 	{
 		text: 'Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ? ',
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 9
 	},
 	{
 		text:
 			'Avez-vous vu apparaître une gêne respiratoire ou une augmentation de votre gêne respiratoire habituelle ? ',
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 10
 	},
 	{
 		text: 'Comment vous sentez-vous ? ',
 		choices: `<label class="questions__form__label" id="fatigue"   >
-		<input class="questions__form__label__input for="fatigue" type="radio" value="Oui" name="choice"> Fatigué
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="bien"  >
-		<input class="questions__form__label__input id="bien"  type="radio" value="Nom" name="choice"> Bien
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label" id="trop-fatigue"   >
-		<input class="questions__form__label__input for="trop-fatigue" type="radio" value="Oui" name="choice"> Trop fatigué
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label" id="moyen" >
-		<input class="questions__form__label__input for="moyen"  type="radio" value="Oui" name="choice"> Moyen
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="fatigue" type="radio" value="Oui" name="choice"> Fatigué
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="bien"  >
+					<input class="questions__form__label__input id="bien"  type="radio" value="Nom" name="choice"> Bien
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label" id="trop-fatigue"   >
+					<input class="questions__form__label__input for="trop-fatigue" type="radio" value="Oui" name="choice"> Trop fatigué
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label" id="moyen" >
+					<input class="questions__form__label__input for="moyen"  type="radio" value="Oui" name="choice"> Moyen
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 11
 	},
 	{
 		text: `Quel est votre âge ? 
-        Ceci, afin de calculer un facteur de risque spécifique.`,
+        		Ceci, afin de calculer un facteur de risque spécifique.`,
 		choices: `<label class="questions__form__num" for="numerique"></label>
-        <input class="questions__form__num" type="number" id="numerique" name="choice"> Ans`,
+        		<input class="questions__form__num" type="number" id="numerique" name="choice"> Ans`,
 		number: 12
 	},
 	{
 		text: `Quel est votre taille ? 
-        Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.`,
+        		Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.`,
 		choices: `<label class="questions__form__num" for="numerique"></label>
-        <input class="questions__form__num" type="number" id="numerique" name="choice"> Cm`,
+        		<input class="questions__form__num" type="number" id="numerique" name="choice"> Cm`,
 		number: 13
 	},
 	{
 		text: `Quel est votre poids ?
-        Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.`,
+        		Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.`,
 		choices: `<label class="questions__form__num" for="numerique"></label>
-        <input class="questions__form__num" type="number" id="numerique" name="choice"> Kg`,
+        		<input class="questions__form__num" type="number" id="numerique" name="choice"> Kg`,
 		number: 14
 	},
 	{
 		text: `Avez-vous de l’hypertension artérielle ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?`,
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label" id="sspas"   >
-		<input class="questions__form__label__input for="sspas" type="radio" value="Oui" name="choice"> Ne sait pas
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label" id="sspas"   >
+					<input class="questions__form__label__input for="sspas" type="radio" value="Oui" name="choice"> Ne sait pas
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 15
 	},
 	{
 		text: `Êtes-vous diabétique ?`,
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 16
 	},
 	{
 		text: `Avez-vous ou avez-vous eu un cancer ?`,
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 17
 	},
 	{
 		text: `Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?
-        Ou êtes-vous suivi par un pneumologue ?`,
+        		Ou êtes-vous suivi par un pneumologue ?`,
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 18
 	},
 	{
 		text: `Avez-vous une insuffisance rénale chronique dialysée ?`,
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 19
 	},
 	{
 		text: `Avez-vous une maladie chronique du foie ?`,
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 20
 	},
 	{
 		text: `Êtes-vous enceinte ?`,
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label" id="oui" id="sspas" >
-		<input class="questions__form__label__input for="sspas"  type="radio" value="Oui" name="choice"> Non applicable
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label" id="oui" id="sspas" >
+					<input class="questions__form__label__input for="sspas"  type="radio" value="Oui" name="choice"> Non applicable
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 
 		number: 21
 	},
 	{
 		text: `Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?`,
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label" id="oui" id="sspas"  >
-		<input class="questions__form__label__input for="sspas" type="radio" value="Oui" name="choice"> Ne sait pas
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label" id="oui" id="sspas"  >
+					<input class="questions__form__label__input for="sspas" type="radio" value="Oui" name="choice"> Ne sait pas
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 22
 	},
 	{
 		text: `Prenez-vous un traitement immunosuppresseur ?
-        C’est un traitement qui diminue vos défenses contre les infections.
-        Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive).`,
+        		C’est un traitement qui diminue vos défenses contre les infections.
+        		Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive).`,
 		choices: `<label class="questions__form__label" id="oui"  >
-		<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label for="nom" >
-		<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
-		<span class="questions__form__label__span"  ></span>
-	</label>
-	<label class="questions__form__label" id="oui" id="sspas"  >
-		<input class="questions__form__label__input for="sspas" type="radio" value="Oui" name="choice"> Ne sait pas
-		<span class="questions__form__label__span"  ></span>
-	</label>`,
+					<input class="questions__form__label__input for="oui" type="radio" value="Oui" name="choice"> Oui
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label for="nom" >
+					<input class="questions__form__label__input id="nom" type="radio" value="Nom" name="choice"> Nom
+					<span class="questions__form__label__span"  ></span>
+				</label>
+				<label class="questions__form__label" id="oui" id="sspas"  >
+					<input class="questions__form__label__input for="sspas" type="radio" value="Oui" name="choice"> Ne sait pas
+					<span class="questions__form__label__span"  ></span>
+				</label>`,
 		number: 23
 	}
 ];
